@@ -33,7 +33,15 @@ namespace SlidingWindow.Logic
 
                 if (_windowStartTime.HasValue)
                 {
-                    throw new NotImplementedException();
+                    if (elapsedTime >= _requestIntervalTicks)
+                    {
+                        // moving to next window, adding interval
+                        _windowStartTime += _requestIntervalTicks;
+                        // fixing previous request count 
+                        _previousRequestCount = _requestCount;
+                        // set counter to zero
+                        _requestCount = 0;
+                    }
                 }
                 else
                 {
