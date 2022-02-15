@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1500
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateLimiterSlidingWindow.Tests", "RateLimiterSlidingWindow\RateLimiterSlidingWindow.Tests.csproj", "{D0DF3291-6ADD-4CEA-A63C-961202BE92AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateLimiterSlidingWindow.Tests", "RateLimiterSlidingWindow.Tests\RateLimiterSlidingWindow.Tests.csproj", "{D0DF3291-6ADD-4CEA-A63C-961202BE92AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlidingWindow.Logic", "..\SlidingWindow.Logic\SlidingWindow.Logic.csproj", "{4BD7698B-9090-4AB0-84E6-65C2A58308A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlidingWindow.Logic", "SlidingWindow.Logic\SlidingWindow.Logic.csproj", "{4BD7698B-9090-4AB0-84E6-65C2A58308A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
