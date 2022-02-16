@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace SlidingWindow.Logic.Services
 {
-    class Timestamp : ITimestamp
+    public class Timestamp : ITimestamp
     {
         public long GetTimestamp()
         {

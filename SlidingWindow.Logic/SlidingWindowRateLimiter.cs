@@ -3,7 +3,7 @@ using System;
 
 namespace SlidingWindow.Logic
 {
-    public class SlidingWindowRateLimiter
+    public class SlidingWindowRateLimiter : IRateLimiter
     {
         // Object for locking Thread
         private readonly object _concurrencySyncObject = new object();

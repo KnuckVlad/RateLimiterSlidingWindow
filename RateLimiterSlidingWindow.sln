@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlidingWindow.Logic", "SlidingWindow.Logic\SlidingWindow.Logic.csproj", "{4BD7698B-9090-4AB0-84E6-65C2A58308A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlidingWindow.Tests", "SlidingWindow.Tests\SlidingWindow.Tests.csproj", "{DD8AF2E8-24EF-4858-88BC-68A8B9832F7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlidingWindow.Tests", "SlidingWindow.Tests\SlidingWindow.Tests.csproj", "{DD8AF2E8-24EF-4858-88BC-68A8B9832F7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateLimiterWebApiExample", "RateLimiterWebApiExample\RateLimiterWebApiExample.csproj", "{8B08F679-B624-4810-B2B8-5AF7F498256A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{DD8AF2E8-24EF-4858-88BC-68A8B9832F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD8AF2E8-24EF-4858-88BC-68A8B9832F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD8AF2E8-24EF-4858-88BC-68A8B9832F7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B08F679-B624-4810-B2B8-5AF7F498256A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B08F679-B624-4810-B2B8-5AF7F498256A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B08F679-B624-4810-B2B8-5AF7F498256A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B08F679-B624-4810-B2B8-5AF7F498256A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
