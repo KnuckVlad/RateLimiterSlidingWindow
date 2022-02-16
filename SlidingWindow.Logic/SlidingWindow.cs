@@ -3,7 +3,7 @@ using System;
 
 namespace SlidingWindow.Logic
 {
-    public class SlidingWindow
+    public class SlidingWindowRateLimiter
     {
         // Object for locking Thread
         private readonly object _concurrencySyncObject = new object();
@@ -16,7 +16,7 @@ namespace SlidingWindow.Logic
         private int _previousRequestCount;
         private int _requestCount;
 
-        public SlidingWindow(ITimestamp timestamp, int requestLimit, int requestIntervalMs)
+        public SlidingWindowRateLimiter(ITimestamp timestamp, int requestLimit, int requestIntervalMs)
         {
             _timestamp = timestamp;
             _requestLimit = requestLimit;
@@ -25,7 +25,7 @@ namespace SlidingWindow.Logic
 
         public bool IsLimited()
         {
-            var isPassed = false;
+            var isLimited = true;
             lock (_concurrencySyncObject)
             {
                 long currentTime = _timestamp.GetTimestamp();
@@ -46,10 +46,10 @@ namespace SlidingWindow.Logic
                 if (weightedRequestCount <= _requestLimit)
                 {
                     _requestCount++;
-                    isPassed = true;
+                    isLimited = false;
                 }
             }
-            return isPassed;
+            return isLimited;
         }
 
         /// <summary>
